@@ -1,54 +1,55 @@
-import styled from 'styled-components';
-import { createGlobalStyle } from 'styled-components';
+import styled from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
     * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box ;
     }
 
   body {
-    background: #3434;
+    background: #121212;
     font-family: sans-serif ;
+    color: #fff;
   }
-`
-
+`;
 
 const Container = styled.div`
-      display: flex;
-      justify-content: center ;
-      width: 100%;
-      height:100%;
-      gap: 1rem;
-`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 1rem;
+`;
 
 const SectionOne = styled.section`
-      width: 40vw;
-      min-height: 80vh;
-      background: #5454;
-      padding: 1rem;
-`
+  width: 40vw;
+  min-height: 100vh;
+  padding: 1rem;
+  padding-top: 5rem;
+`;
 
 const SectionTwo = styled.section`
-    width: 40vw;
-    min-height: 80vh;
-    background: #5555 ;
-    padding: 1rem;
-`
-
+  width: 40vw;
+  min-height: 100vh;
+  background: #5555;
+  padding: 1rem;
+  padding-top: 5rem;
+`;
 
 function App() {
   return (
     <>
-    <GlobalStyle />
-    <Container>
-        <SectionOne> 
+      <GlobalStyle />
+      <Container>
+        <SectionOne>
           <h1> Who I am</h1>
-          </SectionOne>
+        </SectionOne>
         <SectionTwo>
           <h1>My Works</h1>
         </SectionTwo>
-    </Container>
+      </Container>
     </>
   );
 }
