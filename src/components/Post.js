@@ -6,6 +6,11 @@ const Post = () => {
         <h2>Post title</h2>
         <p>Description</p>
         <div>tags</div>
+        <h2>Post title</h2>
+        <p>Description</p>
+        <div>tags</div>  <h2>Post title</h2>
+        <p>Description</p>
+        <div>tags</div>
     </div>
   )
 }
